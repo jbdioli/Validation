@@ -1,0 +1,15 @@
+C:\Project\XAMARIN\Validation\Validation\Validation\obj\Debug\netstandard2.0\Validation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\XAMARIN\Validation\Validation\Validation\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Project\XAMARIN\Validation\Validation\Validation\obj\Debug\netstandard2.0\Views\RegisterPage.xaml.g.cs
+C:\Project\XAMARIN\Validation\Validation\Validation\obj\Debug\netstandard2.0\Validation.AssemblyInfoInputs.cache
+C:\Project\XAMARIN\Validation\Validation\Validation\obj\Debug\netstandard2.0\Validation.AssemblyInfo.cs
+C:\Project\XAMARIN\Validation\Validation\Validation\obj\Debug\netstandard2.0\Validation.csproj.CoreCompileInputs.cache
+C:\Project\XAMARIN\Validation\Validation\Validation\bin\Debug\netstandard2.0\Validation.deps.json
+C:\Project\XAMARIN\Validation\Validation\Validation\bin\Debug\netstandard2.0\Validation.dll
+C:\Project\XAMARIN\Validation\Validation\Validation\bin\Debug\netstandard2.0\ref\Validation.dll
+C:\Project\XAMARIN\Validation\Validation\Validation\bin\Debug\netstandard2.0\Validation.pdb
+C:\Project\XAMARIN\Validation\Validation\Validation\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Project\XAMARIN\Validation\Validation\Validation\obj\Debug\netstandard2.0\Validation.dll
+C:\Project\XAMARIN\Validation\Validation\Validation\obj\Debug\netstandard2.0\ref\Validation.dll
+C:\Project\XAMARIN\Validation\Validation\Validation\obj\Debug\netstandard2.0\Validation.pdb
+C:\Project\XAMARIN\Validation\Validation\Validation\obj\Debug\netstandard2.0\Validation.csproj.AssemblyReference.cache
