@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Validation.Views.RegisterPage"
-             xmlns:behaviour="clr-namespace:Validation.Helpers.Behaviors"
+             xmlns:behavior="clr-namespace:Validation.Helpers.Behaviors"
              xmlns:converter="clr-namespace:Validation.Helpers.Converters"
              xmlns:viewModels="clr-namespace:Validation.ViewModels;assembly=Validation"
              Visual="Material">
@@ -32,7 +32,7 @@
                 <Entry Text="{Binding FirstName.Value}"
                        Placeholder="First Name">
                      <Entry.Behaviors>
-                        <behaviour:EntryLineValidationBehaviour IsValid="{Binding FirstName.IsValid}"/>
+                        <behavior:EntryLineValidationBehaviour IsValid="{Binding FirstName.IsValid}"/>
                     </Entry.Behaviors>
                 </Entry>
 
@@ -44,7 +44,7 @@
                   <Entry Text="{Binding LastName.Value}"
                          Placeholder="Last Name">
                      <Entry.Behaviors>
-                        <behaviour:EntryLineValidationBehaviour IsValid="{Binding LastName.IsValid}"/>
+                        <behavior:EntryLineValidationBehaviour IsValid="{Binding LastName.IsValid}"/>
                     </Entry.Behaviors>
                 </Entry>
 
@@ -56,7 +56,7 @@
                   <Entry Text="{Binding Email.Item1.Value}"
                          Placeholder="Email">
                      <Entry.Behaviors>
-                        <behaviour:EntryLineValidationBehaviour IsValid="{Binding Email.Item1.IsValid}"/>
+                        <behavior:EntryLineValidationBehaviour IsValid="{Binding Email.Item1.IsValid}"/>
                     </Entry.Behaviors>
                 </Entry>
 
@@ -67,7 +67,7 @@
                  <Entry Text="{Binding Email.Item2.Value}"
                          Placeholder="Confirm Email">
                      <Entry.Behaviors>
-                        <behaviour:EntryLineValidationBehaviour IsValid="{Binding Email.Item2.IsValid}"/>
+                        <behavior:EntryLineValidationBehaviour IsValid="{Binding Email.Item2.IsValid}"/>
                     </Entry.Behaviors>
                 </Entry>
 
@@ -79,7 +79,7 @@
                   <Entry Text="{Binding Password.Item1.Value}"
                          Placeholder="Password">
                      <Entry.Behaviors>
-                        <behaviour:EntryLineValidationBehaviour IsValid="{Binding Password.Item1.IsValid}"/>
+                        <behavior:EntryLineValidationBehaviour IsValid="{Binding Password.Item1.IsValid}"/>
                     </Entry.Behaviors>
                 </Entry>
 
@@ -90,7 +90,7 @@
                  <Entry Text="{Binding Password.Item2.Value}"
                          Placeholder="Confirm Password">
                      <Entry.Behaviors>
-                        <behaviour:EntryLineValidationBehaviour IsValid="{Binding Password.Item2.IsValid}"/>
+                        <behavior:EntryLineValidationBehaviour IsValid="{Binding Password.Item2.IsValid}"/>
                     </Entry.Behaviors>
                 </Entry>
 
@@ -110,7 +110,7 @@
                        MaxLength="10"
                        Placeholder="Phone Number">
                      <Entry.Behaviors>
-                        <behaviour:EntryLineValidationBehaviour IsValid="{Binding PhoneNumber.IsValid}"/>
+                        <behavior:EntryLineValidationBehaviour IsValid="{Binding PhoneNumber.IsValid}"/>
                     </Entry.Behaviors>
                 </Entry>
 
@@ -130,6 +130,9 @@
                         IsVisible="{Binding TermsAndCondition.IsValid, Converter={StaticResource InverseBoolConverter}}"
                         Style="{StaticResource ErrorTextStyle}"/>
 
+                <!--<Button Text="CREATE ACCOUNT"
+                        Command="{Binding SignUpCommand}"
+                        IsEnabled="{Binding LoginAllowed}"/>-->
                 <Button Text="CREATE ACCOUNT"
                         Command="{Binding SignUpCommand}"/>
             </StackLayout>

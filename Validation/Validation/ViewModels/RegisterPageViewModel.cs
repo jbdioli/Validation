@@ -22,6 +22,8 @@ namespace Validation.ViewModels
             AddValidationRules();
         }
 
+
+
         public void AddValidationRules()
         {
             FirstName.Validations.Add(new IsNotNullOrEmptyRule<string> { ValidationMessage = "First Name Required" });
@@ -48,6 +50,7 @@ namespace Validation.ViewModels
 
         public ICommand SignUpCommand => new Command(async () =>
         {
+
             if (AreFieldsValid())
             {
                 await App.Current.MainPage.DisplayAlert("Welcome", "", "Ok");
@@ -58,14 +61,17 @@ namespace Validation.ViewModels
         {
             bool isFirstNameValid = FirstName.Validate();
             bool isLastNameValid = LastName.Validate();
-            bool isBirthDayValid = BirthDay.Validate();
-            bool isPhoneNumberValid = PhoneNumber.Validate();
-            bool isEmailValid = Email.Validate();
-            bool isPasswordValid = Password.Validate();
-            bool isTermsAndConditionValid = TermsAndCondition.Validate();
+            // bool isBirthDayValid = BirthDay.Validate();
+            //bool isPhoneNumberValid = PhoneNumber.Validate();
+            //bool isEmailValid = Email.Validate();
+            //bool isPasswordValid = Password.Validate();
+            //bool isTermsAndConditionValid = TermsAndCondition.Validate();
 
-            return isFirstNameValid && isLastNameValid && isBirthDayValid
-                   && isPhoneNumberValid && isEmailValid && isPasswordValid && isTermsAndConditionValid;
+            //return isFirstNameValid && isLastNameValid && isBirthDayValid
+            //       && isPhoneNumberValid && isEmailValid && isPasswordValid && isTermsAndConditionValid;
+
+
+            return isFirstNameValid && isLastNameValid;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

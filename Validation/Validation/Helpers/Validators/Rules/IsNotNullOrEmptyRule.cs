@@ -5,6 +5,11 @@ namespace Validation.Helpers.Validators.Rules
     {
         public string ValidationMessage { get; set; }
 
+        public IsNotNullOrEmptyRule()
+        {
+
+        }
+
         public bool Check(T value)
         {
             if (value == null)
